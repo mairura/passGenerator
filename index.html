@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Password Generator</title>
+</head>
+<body>
+    <!------------------------- First Approach -------------------------->
+    <div id="firstApproach">
+        <h5 color="greenyellow">First Approach To Generate A Random Password</h5>
+
+        <p>Click to generate password</p>
+        <button onclick="gfg_Run()">Click Here</button>
+        <div id="page1">
+            <p id="geeks"> 🙂 </p>
+        </div>
+        <script>
+            var el_down = document.getElementById("geeks");
+            /*-- Function to generate random password---*/
+            function generateP(){
+                var pass = "";
+                var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" + "abcdefghijklmnopqrstuvwxtz0123456789@#&*!^%";
+    
+                for(let i = 1; i <= 8; i++){
+                    var char = Math.floor(Math.random() * str.length + 1);
+                    pass += str.charAt(char);
+                }
+                return pass;
+            }
+    
+            function gfg_Run(){
+                el_down.innerHTML = generateP();
+            }
+        </script>
+    </div>  
+</body>
+</html>
