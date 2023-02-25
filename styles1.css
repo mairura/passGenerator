@@ -1,46 +1,51 @@
-#firstApproach {
-  background-color: #fff;
-  height: 60vh;
+/*-------------Second Method------------*/
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#secondApproach {
+  background-color: #000;
+  color: #fff;
+  height: 70vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#firstApproach h5 {
-  font-size: 19px;
-  font-family: "Poppins";
+#secondApproach h5 {
+  font-size: 29px;
   font-weight: 300;
+  font-family: "Poppins";
 }
-#firstApproach p {
+#secondApproach p {
   font-size: 12px;
 }
-#firstApproach button {
+#secondApproach button {
   padding: 10px;
   border: 1px solid black;
   border-radius: 8px;
-  background-color: transparent;
+  background-color: white;
   color: black;
   cursor: pointer;
 }
-#firstApproach button:hover {
+#secondApproach button:hover {
   background-color: black;
   color: white;
+  border: 1px solid white;
 }
-#page1 {
+#page2 {
+  width: 100px;
+  background-color: greenyellow;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
-  align-items: center;
   text-align: center;
-  background-color: black;
-  color: black;
-  width: 100px;
-  margin-top: 15px;
+  align-items: center;
   padding: 20px 40px;
   border-radius: 15px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 50px;
-}
-#geeks {
-  color: #fff;
+  color: red;
 }

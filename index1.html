@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
+    <title>Generate Random Password</title>
 </head>
 <body>
     <!------------------------- Second Approach --------------------------->
-    <p>Click to generate password Second Method</p>
-    <button onclick="generatePass()">Click Here</button>
-    <div>
-        <p id="geeks2"></p>
-    </div>
-    <script>
-      var el_down = document.getElementById("geeks2");
+    <div id="secondApproach">
+        <h5>Second Method of Generating Random Password</h5>
+        <p>Click to generate password Second Method</p>
+        <button onclick="generatePass()">Click Here</button>
+        <div id="page2">
+            <p id="geeks2"> 🙂 </p>
+        </div>
+        <script>
+          var el_down = document.getElementById("geeks2");
+    
+          function generatePass(){
+            el_down.innerHTML = Math.random().toString(36).slice(2) + Math.random().toString(36).toUpperCase().slice(2);
+          }
+        </script>
 
-      function generatePass(){
-        el_down.innerHTML = Math.random().toString(36).slice(2) + Math.random().toString(36).toUpperCase().slice(2);
-      }
-    </script>
+    </div>
+
     
 </body>
 </html>
